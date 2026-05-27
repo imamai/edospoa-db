@@ -407,7 +407,7 @@ tr:hover td{background:#faf8f4}
         <div style="padding:1.4rem">
           <div class="seed-banner">
             <div class="seed-info">
-              <strong>One-click setup</strong> — seeds all 12 Mejason POS modules into <code>pos_modules</code>
+              <strong>One-click setup</strong> — seeds all 15 Mejason POS modules into <code>pos_modules</code>
               and creates <strong>Mejason Media Production</strong> as a Premium client with all modules assigned.
             </div>
             <div class="seed-actions">
@@ -643,6 +643,16 @@ const MEJASON_MODULES = [
     is_active: true,
     sort_order: 8
   },
+  {
+    id: 'mod-pos-expenses',
+    name: 'Expenses & Profitability',
+    category: 'Finance',
+    tier: 'STANDARD',
+    monthly_fee: 900,
+    description: 'Record operating expenses and Cost-of-Goods entries by category. Unlocks Gross Profit & Net Profit cards on dashboard and analytics, plus expense breakdown in CSV/Excel/PDF exports.',
+    is_active: true,
+    sort_order: 9
+  },
 
   // ─── PREMIUM (automation + integrations) ──────────────────
   {
@@ -653,7 +663,7 @@ const MEJASON_MODULES = [
     monthly_fee: 2000,
     description: 'Safaricom Daraja STK push integration. Paybill + till support, real-time PIN confirmation, sandbox+live modes.',
     is_active: true,
-    sort_order: 9
+    sort_order: 10
   },
   {
     id: 'mod-pos-email',
@@ -663,7 +673,7 @@ const MEJASON_MODULES = [
     monthly_fee: 1500,
     description: 'Auto-generate PDF and email invoice to client on checkout. html2pdf rendering, Netlify function backend.',
     is_active: true,
-    sort_order: 10
+    sort_order: 11
   },
   {
     id: 'mod-pos-whatsapp',
@@ -673,7 +683,7 @@ const MEJASON_MODULES = [
     monthly_fee: 1500,
     description: 'Send PDF invoice via WhatsApp Business API with fallback to WA Web link. Auto-formatted message template.',
     is_active: true,
-    sort_order: 11
+    sort_order: 12
   },
   {
     id: 'mod-pos-users',
@@ -683,7 +693,7 @@ const MEJASON_MODULES = [
     monthly_fee: 1000,
     description: 'Multi-user login (admin/manager/cashier), granular permission matrix, add/edit/delete staff, role editor.',
     is_active: true,
-    sort_order: 12
+    sort_order: 13
   },
 
   // ─── SPECIALTY (media-specific add-ons) ───────────────────
@@ -695,7 +705,7 @@ const MEJASON_MODULES = [
     monthly_fee: 500,
     description: 'Pre-configured 8 media departments: Wedding, Traditional, Graduation, Corporate, Studio, Editing, Equipment, Passport/ID.',
     is_active: true,
-    sort_order: 13
+    sort_order: 14
   },
   {
     id: 'mod-pos-settings',
@@ -705,7 +715,7 @@ const MEJASON_MODULES = [
     monthly_fee: 500,
     description: 'Business info, KCB bank details, M-Pesa paybill/till/account config, social media links, invoice footer branding.',
     is_active: true,
-    sort_order: 14
+    sort_order: 15
   }
 ];
 
